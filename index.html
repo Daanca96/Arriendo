@@ -24,49 +24,61 @@ https://bit.ly/2NTDQht-->
 
  <header>
  	<div class="navbar-fixed">
- 	<nav>
-         <div class="navbar-fixed red">
+ 	<nav class="nav-wrapper red">
+         <div class="container">
      	 <a href="#" class="brand-logo">Se Arrienda</a>
-      	 <ul id="nav-mobile" class="right hide-on-med-and-down">
-       	 <li><a href="#section_Ubicacion">Ubicacion</a></li>
-         <li><a href="#section_Apartamento1">Apartamento 1</a></li>
-         <li><a href="#section_Apartamento2">Apartamento 2</a></li>
-         <li><a href="#section_Contacto">Contacto</a></li>
+     	 <a href="#" data-target="menu-responsive" class="sidenav-trigger">
+     	 	<i class="material-icons">menu</i>
+     	 </a>
+
+      	 <ul class="right hide-on-med-and-down">
+       	 	<li><a href="#section_Ubicacion">Ubicacion</a></li>
+         	<li><a href="#section_Apartamento1">Apartamento 1</a></li>
+         	<li><a href="#section_Apartamento2">Apartamento 2</a></li>
+         	<li><a href="#section_Contacto">Contacto</a></li>
          </ul>
+
          </div>
-   </nav> 
-   </div>
+    </nav> 
+    </div>
+        <ul class="sidenav" id="menu-responsive">
+   		 	<li><a href="#section_Ubicacion">Ubicacion</a></li>
+         	<li><a href="#section_Apartamento1">Apartamento 1</a></li>
+         	<li><a href="#section_Apartamento2">Apartamento 2</a></li>
+         	<li><a href="#section_Contacto">Contacto</a></li>
+         </ul>
  </header>
 
  <main>
+
 	<div class="container">
 		<div class="row">
 			<div class="col s12 m12" id="section_Ubicacion">
 				<h4>Ubicación</h4>
-
 				<blockquote>
 					Carrera 34#9-24 Barrio las Brisas Neiva-Huila
 				</blockquote>
-
 				<iframe class="iframee" src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d3984.5985655561713!2d-75.26669443601212!3d2.931119197865162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e2!4m5!1s0x8e3b74117f5cbb31%3A0x3888eaf55f8a881d!2sCorporaci%C3%B3n+Universitaria+del+Huila+-+Sede+Prado+Alto%2C+Calle+8%2C+Huila!3m2!1d2.9305993!2d-75.2651195!4m5!1s0x8e3b7411419e3653%3A0x34ca0a6839d77e1d!2sCra.+34+%239-24%2C+Neiva%2C+Huila!3m2!1d2.9317149!2d-75.2642647!5e0!3m2!1ses!2sco!4v1552100704286" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-
 				<br>
 				<div class="col s12 m6" >
 					<img class="responsive-img" src="apar1.webp">
 		        </div>
-				
 				<div class="col s12 m6" >
 				    <img class="responsive-img" src="apar2.webp">
 				</div>
-				
 				<div class="col s12 m12" >
 				<blockquote>
 					para mirar el apartamento por favor llamar para una cita previa
 				</blockquote>
 				</div>
 			</div>
+        </div>
+    </div>
 
-			<div class="col s12 m12" id="section_Apartamento1">
+    <div class="blue">
+    <div class="container">
+		<div class="row">
+			<div class="col s12 m12 white-text" id="section_Apartamento1">
 				<h4>Apartamento Pequeño</h4>
 				<h5>- 2 alcobas</h5>
 				<h5>- 1 baño</h5>
@@ -75,9 +87,14 @@ https://bit.ly/2NTDQht-->
 				<h5>- Comedor</h5>
 				<h5>- Patio (Pequeño)</h5>
 				<h5>- Garaje (Moto)</h5><br>
-				<h5 class="red-text">PRECIO $ 450.000 pesos colombianos-sin servicios incluidos</h5>
+				<!--<h5 class="red-text">PRECIO $ 450.000 pesos colombianos-sin servicios incluidos</h5>-->
 			</div>
+        </div>
+    </div>
+    </div>
 
+    <div class="container">
+		<div class="row">
 			<div class="col s12 m12" id="section_Apartamento2">
 				<h4>Apartamento Grande</h4>
 				<h5>- 4 alcobas</h5>
@@ -87,16 +104,16 @@ https://bit.ly/2NTDQht-->
 				<h5>- Comedor</h5>
 				<h5>- Patio (Pequeño)</h5>
 				<h5>- Garaje (Moto)</h5><br>
-				<h5 class="red-text">PRECIO $ 650.000 pesos colombianos-sin servicios incluidos</h5>
+				<!--<h5 class="red-text">PRECIO $ 650.000 pesos colombianos-sin servicios incluidos</h5>-->
 			</div>
 
 			<div class="col s12 m12" id="section_Contacto">
 				<h4>Contacto</h4>
 				<h5><i class="material-icons">call</i> 3153565657</h5>
 			</div>
-			
-        </div>
-    </div>
+	    </div>
+    </div>	
+
  </main>
 
  <footer>
@@ -107,5 +124,12 @@ https://bit.ly/2NTDQht-->
 
   <!-- Compiled and minified JavaScript -->
        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+       <script>
+       	 document.addEventListener('DOMContentLoaded',function(){
+       	 	M.AutoInit();
+       	 });
+       </script>
+
 </body>
 </html>
